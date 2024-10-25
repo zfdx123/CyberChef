@@ -27,10 +27,6 @@ jobs:
           npm install
           npm run build
 
-      - name: Update Dash Feed
-        run: |
-          echo "<entry><version>$(date)</version><url>linux-command.docset.tgz</url></entry>" > .deploy/linux-command-docset.xml
-
       - name: 🚀 上传静态文件到 GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
