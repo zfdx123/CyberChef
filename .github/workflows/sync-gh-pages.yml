@@ -25,7 +25,7 @@ jobs:
       - name: ♻️ 编译静态文件
         run: |
           npm install
-          npm build
+          npm run build
 
       - name: Update Dash Feed
         run: |
